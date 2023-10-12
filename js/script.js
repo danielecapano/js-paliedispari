@@ -3,9 +3,9 @@
 let parola = prompt("Inserisci una parola");
 
 if (isPalindrome(parola)) {
-  console.log(`${word} è una parola palindroma`);
+  console.log(`${parola} è una parola palindroma`);
 } else {
-  console.log(`${word} non è una parola palindroma`);
+  console.log(`${parola} non è una parola palindroma`);
 }
 
 //ESERCIZIO PARI O DISPARI
