@@ -14,7 +14,7 @@ let userChoice = "";
 
 do {
   userChoice = prompt("Scegli pari o dispari");
-} while (userChoice !== "pari" || userChoice !== "dispari");
+} while (userChoice !== "pari" && userChoice !== "dispari");
 console.log(userChoice);
 
 let userNumber;
@@ -44,15 +44,13 @@ function isPalindrome(string) {
 
   //metodo 2 con ciclo for
 
+  // let reverseWorld = '';
+
   // for (let i = word.length - 1; i >= 0; i--) {
   //   reverseWorld += word[i];
   // }
 
-  if (word === reverseWorld) {
-    return true;
-  } else {
-    return false;
-  }
+  return word === reverseWorld;
 }
 
 function getRandomInt(min, max) {
@@ -63,9 +61,5 @@ function getRandomInt(min, max) {
 
 function isSumEven(num1, num2) {
   let sum = num1 + num2;
-  if (sum % 2 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return sum % 2 === 0;
 }
