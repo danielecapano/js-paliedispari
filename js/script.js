@@ -1,8 +1,8 @@
 //ESERCIZIO PARLOLE PALINDROME
 
-let word = prompt("Inserisci una parola");
+let parola = prompt("Inserisci una parola");
 
-if (isPalindrome(word)) {
+if (isPalindrome(parola)) {
   console.log(`${word} è una parola palindroma`);
 } else {
   console.log(`${word} non è una parola palindroma`);
@@ -16,12 +16,14 @@ do {
   userChoice = prompt("Scegli pari o dispari");
 } while (userChoice !== "pari" || userChoice !== "dispari");
 console.log(userChoice);
+
 let userNumber;
 
 do {
   userNumber = parseInt(prompt("scegli un numero da 1 a 5"));
 } while (userNumber < 1 || userNumber > 5);
 console.log(userNumber);
+
 const pcNumber = getRandomInt(1, 5);
 console.log(pcNumber);
 
